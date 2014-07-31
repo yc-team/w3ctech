@@ -14,6 +14,7 @@
 * cheerio：       解析html
 * cli-table：     cli里面展示数据table利器
 
+
 ##### 发请求，爬有各种宝数据的网站
 
 考虑几个问题，不一样的网站的编码不一样，比如有的不是utf-8，request返回的response如何设置
@@ -28,17 +29,20 @@ request(options, function(error, response, body){
 });
 ```
 
+
 看一个options里面的参数：
 
 ```shell
 `encoding` - Encoding to be used on `setEncoding` of response data. If `null`, the `body` is returned as a `Buffer`.
 ```
 
+
 补充：
 
 * uri || url - fully qualified uri or a parsed url object from url.parse()
 
 很多人习惯不一样，其实两个都是一样的
+
 
 
 ##### 解码服务返回的html
@@ -79,7 +83,9 @@ var fundName = $('div.bktit_new > a').text().trim();
 
 ##### 在cli里面展示table数据
 
-注释：cli-table最新的0.0.3不支持中文head，还是用0.0.1的tag版本
+注释：
+
+> cli-table最新的0.0.3不支持中文head，还是用0.0.1的tag版本
 
 ```shell
 var table = new Table({
@@ -88,8 +94,8 @@ var table = new Table({
 });
 
 table.push(
-	[],
-	[]
+	['现金宝', '汇添富现金宝货币', '4.50%' ,'1.2541元' ,'2014-07-30'],
+	['财富宝', '华夏财富宝货币',  '4.41%', '1.1753元', '2014-07-30']
 );
 
 console.log(table.toString());
@@ -109,7 +115,7 @@ style: {
 }
 ```
 
-5. async只要是针对多个宝遍历
+##### async只要是针对多个宝遍历
 
 ```shell
 var funds = [
