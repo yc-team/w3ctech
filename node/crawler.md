@@ -4,7 +4,7 @@
 
 如图：
 
-![各种包](http://pan.baidu.com/s/1o6nylIi)
+![各种包](bao.png)
 
 ####工具依赖：
 
