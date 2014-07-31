@@ -8,13 +8,13 @@
 
 ####工具依赖：
 
-* request       请求必备
-* iconv-lite    转码必备
-* async         asynchronous
-* cheerio       解析html
-* cli-table     cli里面展示数据table利器
+* request：       请求必备
+* iconv-lite：    转码必备
+* async：         asynchronous
+* cheerio：       解析html
+* cli-table：     cli里面展示数据table利器
 
-1. 发请求，爬有各种宝数据的网站
+##### 发请求，爬有各种宝数据的网站
 
 考虑几个问题，不一样的网站的编码不一样，比如有的不是utf-8，request返回的response如何设置
 
@@ -41,7 +41,7 @@ request(options, function(error, response, body){
 很多人习惯不一样，其实两个都是一样的
 
 
-2. 解码服务返回的html
+##### 解码服务返回的html
 
 ```shell
 //body是request请求返回的
@@ -68,7 +68,7 @@ iconv.decode = function decode(buf, encoding, options){
 所以：这个body必须是Buffer类型的
 
 
-3. 获取body里面指定dom元素的值
+##### 获取body里面指定dom元素的值
 
 ```shell
 var $ = cheerio.load(body);
@@ -77,7 +77,7 @@ var fundName = $('div.bktit_new > a').text().trim();
 ```
 
 
-4. 在cli里面展示table数据
+##### 在cli里面展示table数据
 
 注释：cli-table最新的0.0.3不支持中文head，还是用0.0.1的tag版本
 
