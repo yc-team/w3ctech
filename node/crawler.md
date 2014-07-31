@@ -2,6 +2,10 @@
 
 在命令行展示各种宝的数据
 
+如图：
+
+![各种包](http://pan.baidu.com/s/1o6nylIi)
+
 ####工具依赖：
 
 * request       请求必备
