@@ -1,7 +1,8 @@
 node-process-info
 ================
 
-[参考1](http://snoopyxdy.blog.163.com/blog/static/60117440201192841649337/)
+* [参考1](http://snoopyxdy.blog.163.com/blog/static/60117440201192841649337/)
+* [官方api参考x](http://nodejs.org/docs/latest/api/process.html#process_process_argv)
 
 #### process.argv
 
