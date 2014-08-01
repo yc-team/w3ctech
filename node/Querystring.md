@@ -1,9 +1,10 @@
-node-process-info
+node-querystring-info
 ================
 
-* process.platform
-* process.env.SUDO_USER
-* process.exit(0)
+* querystring.stringify
+* querystring.parse
+* querystring.escape
+* querystring.unescape
 
 
 
