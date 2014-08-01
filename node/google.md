@@ -4,8 +4,8 @@
 
 如图：
 
-![google](google-2)
-![google](google-1)
+![google](google-2.png)
+![google](google-1.png)
 
 ####工具依赖：
 
