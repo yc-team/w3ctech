@@ -1,10 +1,12 @@
-node-querystring-info
+node-cluster-info
 ================
 
-* querystring.stringify
-* querystring.parse
-* querystring.escape
-* querystring.unescape
+* cluster.isMaster
+* cluster.isWorker
+* cluster.fork
+* cluster.worker
+* cluster.worker.id
+* cluster.worker.process
 
 
 
