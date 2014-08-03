@@ -1,7 +1,7 @@
 node-cluster-info
 ================
 
-核心模块，主要用于Nodejs的多核处理，试用于一些负载均衡的集群环境
+[核心模块](https://github.com/joyent/node/blob/master/lib/cluster.js)，主要用于Nodejs的多核处理，试用于一些负载均衡的集群环境
 
 目前的状态:
 
