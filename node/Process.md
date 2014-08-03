@@ -23,6 +23,10 @@ node-process-info
 
 #### process.env.SUDO_USER
 #### process.env.NODE_ENV
+
+
+#### process.env.NODE_UNIQUE_ID
+
 #### process.exit(0)
 
 以指定的code来结束当前的process
