@@ -9,8 +9,28 @@ node-cluster-info
 
 [官方api地址](http://nodejs.cn/api/cluster#cluster_cluster_settings)
 
-* cluster.isMaster
 * cluster.isWorker
+
+返回Boolean值，判断当前进程是否是从主进程的fork出来的，如果process.env.NODE_UNIQUE_ID有值的化，返回true
+
+源码：
+
+```shell
+cluster.isWorker = ('NODE_UNIQUE_ID' in process.env);
+```
+
+* cluster.isMaster
+
+返回Boolean值，判断是否是主进程
+
+源码：
+
+```shell
+cluster.isMaster = (cluster.isWorker === false);
+```
+
+
+
 * cluster.fork
 * cluster.worker
 * cluster.worker.id
