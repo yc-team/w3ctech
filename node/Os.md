@@ -1,6 +1,8 @@
 node-os-info
 ================
 
+[官方api地址](http://nodejs.cn/api/os#os_os_networkinterfaces)
+
 
 * os.type()
 * os.platform()
