@@ -32,7 +32,7 @@ node-process-info
 
 #### process.exit(0)
 
-以指定的code来结束当前的process
+> 以指定的code来结束当前的process
 
 #### process.cwd()
 
